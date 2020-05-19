@@ -43,10 +43,11 @@ for(var i=0;i<projectLinks.length;i++){
 }
 
 function noSectionDisplay(e){
-
+    
     for(var i=0;i<allSections.length;i++){
         allSections[i].style.display='none';
     }
+    document.documentElement.scrollTop=0;//its placement is very important//
     var classes=e.target.classList;
     var p=classes[2];
     projectSection.style.display='block'
@@ -59,7 +60,6 @@ function noSectionDisplay(e){
             projects[i].style.display='block';
         }
     }
-    document.documentElement.scrollTop=0;
 }
 
 const exitCross=document.querySelector('.img-desc-exit');
