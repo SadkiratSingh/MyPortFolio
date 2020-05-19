@@ -283,8 +283,8 @@ h3{
     .aboutme__body{
         text-align:left;
         grid-column:1/2;
-        grid-row:2/4;
-        align-self:top;
+        grid-row:3/4;
+        align-self:center;
         margin-top:3rem;
     }
 }
