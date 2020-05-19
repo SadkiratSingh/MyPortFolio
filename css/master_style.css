@@ -175,6 +175,29 @@ h3{
 
 }
 
+.service-skill-list{
+    list-style-type:none;
+    padding-left:0px;
+    text-align:center;
+    margin-top:0.3px;
+}
+
+.service-skill{
+    margin:0.8rem;
+    font-size:1.2rem;
+    font-weight:500;
+}
+
+.service-skill::after{
+    content:'';
+    display:block;
+    width:3.5rem;
+    height:0.1rem;
+    background-color:white;
+    margin:0.3rem auto;
+    opacity:0.3;
+}
+
 .btn{
     border:1px solid var(--clr-accent);
     color:var(--clr-dark);
@@ -279,21 +302,24 @@ h3{
 /*mywork*/
 
 .mywork{
-    background-color:var(--clr-dark);
-    color:var(--clr-light);
+    /*background-color:var(--clr-dark);*/
+    background-color:#f2f2f2;
+    /*color:var(--clr-light);*/
+    color:black;
     text-align:center;
 }
 
 .section__subtitle--work{
    color:var(--clr-accent);
    margin-bottom:1.5rem;
+   font-weight:bolder;
 }
 
 .portfolio__item{
-    display:inline-block;
     margin-left:0.5rem;
     margin-right:0.5rem;;
-    margin-bottom:0.5rem;
+    margin-bottom:1rem;
+    box-shadow:var(--bs);
     overflow: hidden;
 }
 
@@ -301,6 +327,74 @@ h3{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 }
+
+.portfolio-item-description{
+    text-align:center;
+    background-color:white;
+}
+
+.work-title{
+    margin:0.3rem;
+    padding-top:0.5rem;
+    font-size:1.5rem;
+}
+
+.skill:nth-child(n){
+    color:gray;
+    font-size:0.8rem;
+    margin:0;
+    letter-spacing:0.07rem;
+}
+
+
+.skill:nth-child(2n)::before{
+    content:'';
+    display:inline-block;
+    width:0.7rem;
+    height:0.08rem;
+    background-color:gray;
+    transform:rotate(90deg);
+    margin:none;
+    position:relative;
+    right:0.2rem;
+}
+
+.skill:nth-child(2n+3)::before{
+    content:'';
+    display:inline-block;
+    width:0.7rem;
+    height:0.08rem;
+    background-color:gray;
+    transform:rotate(90deg);
+    margin:none;
+    position:relative;
+    right:0.2rem;
+}
+
+.work-links{
+    margin:0;
+}
+
+.work-github-link{
+    border:1px solid var(--clr-accent);
+    color:black;
+    background-color:var(--clr-accent);
+    text-decoration:none;
+    font-weight:bolder;
+    letter-spacing:1px;
+    font-size:0.8rem;
+    display:inline-block;
+    padding:0.3rem 2rem;
+    text-transform:uppercase;
+    border-radius:1rem;
+    margin:0.5rem 0rem;
+}
+
+.work-image-wrapper{
+    overflow:hidden;
+    background-color:var(--clr-accent);
+}
+
 
 .portfolio__img{
     transition:transform 750ms cubic-bezier(0.5,0,0.5,1),
@@ -312,9 +406,12 @@ h3{
     opacity:0.8;
 }
 
-.portfolio__item:focus .portfolio__img{
-    transform:scale(1.2,1.2);
-    opacity:0.8;
+
+@media screen and (min-width:600px){
+    .portfolio{
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    }
+    
 }
 
 
@@ -368,7 +465,7 @@ header{
 }
 
 .logo{
-    max-width:100px;
+    max-width:200px;
 }
 
 .nav-open .nav-toggle{
@@ -508,7 +605,87 @@ header{
     bottom:0.4rem;
 }
 
+/*project-description*/
 
+.project__title{
+    font-weight:var(--fw-reg);
+    text-align:center;
+}
+
+.project__title strong{
+    display:block;
+    font-weight:var(--fw-bold);
+}
+
+.project__subtitle{
+    background-color:var(--clr-accent);
+    font-family:var(--ff-secondary);
+    padding:0.3rem;
+    margin-bottom:1rem;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.project-desc{
+    position:relative;
+    display:none;
+    text-align:center;
+}
+
+.description__img{
+    box-shadow:var(--bs);
+}
+
+.desc-exit{
+    border:1px solid var(--clr-accent);
+    color:black;
+    background-color:var(--clr-accent);
+    text-decoration:none;
+    font-weight:bolder;
+    letter-spacing:1px;
+    font-size:0.8rem;
+    display:inline-block;
+    padding:1rem 2rem;
+    text-transform:uppercase;
+    border-radius:1rem;
+    margin:0.5rem 0rem;
+    box-shadow:var(--bs);
+    cursor: pointer;
+}
+
+.img-desc-exit{
+    position:absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+    margin:0;
+}
+
+.img-desc-exit:hover{
+    opacity:0.7;
+}
+
+@media screen and (min-width:600px){
+    .description-wrapper{
+        width:70%;
+        margin:0 auto;
+    }
+    .project__subtitle{
+        width:50%;
+        margin:1rem auto;
+    }
+    .description__img{
+        margin:1rem auto;
+    }
+
+    .img-desc-exit{
+        margin-right:2rem;
+        margin-top:2rem;
+    }
+
+}
+
+/*project-description*/
 
 
 

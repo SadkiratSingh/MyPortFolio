@@ -10,152 +10,252 @@
 </head>
 
 <body>
-<header>
-    <div class='logo'>
-        <img src='images/portfolio.jpg' alt=''>
-    </div>
 
-    <button class='nav-toggle' aria-label='toggle-navigation'>
-        <span class='hamburger'></span>
-    </button>
+<div class='section-wrapper'>
+    <header class='portfolio-sections'>
+        <div class='logo'>
+            <h3>Sadkirat's Portfolio</h3>
+        </div>
 
-    <nav class='nav'>
-        <ul class='nav__list'>
-            <li class='nav__item'><a href='#home' class='nav__link'>Home</a></li>
-            <li class='nav__item'><a href='#service' class='nav__link'>My Services</a></li>
-            <li class='nav__item'><a href='#about' class='nav__link'>About Me</a></li>
-            <li class='nav__item'><a href='#work' class='nav__link'>My Work</a></li>
-        </ul>
-    </nav>
+        <button class='nav-toggle' aria-label='toggle-navigation'>
+            <span class='hamburger'></span>
+        </button>
 
+        <nav class='nav'>
+            <ul class='nav__list'>
+                <li class='nav__item'><a href='#home' class='nav__link'>Home</a></li>
+                <li class='nav__item'><a href='#service' class='nav__link'>My Skills</a></li>
+                <li class='nav__item'><a href='#about' class='nav__link'>About Me</a></li>
+                <li class='nav__item'><a href='#work' class='nav__link'>My Work</a></li>
+            </ul>
+        </nav>
+</div>
 </header>
 
 <!--INTODUCTION-->
-<section class='intro' id='home'>
-    <h1 class='section__title section__title--intro'>
-        Hi,I am <strong>Sadkirat Singh</strong>
-    </h1>
-    <p class='section__subtitle section__subtitle--intro'>A Full Stack Developer</p>
-    <img src='images/myphoto1.jpg' class='intro__img' alt=''>
-</section>
+<div class='section-wrapper'>
+    <section class='intro portfolio-sections' id='home'>
+        <h1 class='section__title section__title--intro'>
+            Hi,I am <strong>Sadkirat Singh</strong>
+        </h1>
+        <p class='section__subtitle section__subtitle--intro'>A Computer Science Student</p>
+        <img src='images/myphoto1.jpg' class='intro__img' alt=''>
+    </section>
+</div>
 
 <!--MyServices-->
-<section class='myservices' id='service'>
-    <h2 class='section__title section__title--services'>
-        What I do
-    </h2>
+<div class='section-wrapper'>
+    <section class='myservices portfolio-sections' id='service'>
+        <h2 class='section__title section__title--services'>
+            My Skills
+        </h2>
 
-    <div class='services'>
-        <div class='service'>
-            <h3>Design+Development</h3>
-            <p>For larger organizations and businesses, web development teams can consist of hundreds of people (web developers) 
-                and follow standard methods like Agile methodologies while developing websites. 
-                Smaller organizations may only require a single permanent or contracting developer, 
-                or secondary assignment to related job positions such as a graphic designer or information systems technician.
-                Web development may be a collaborative effort between departments rather than the domain of a designated department. 
-                There are three kinds of web developer specialization: front-end developer, back-end developer, and full-stack developer. 
-                Front-end developers are responsible for behavior and visuals that run in the user browser, 
-                while back-end developers deal with the servers.</p>
-        </div><!--service end-->
+        <div class='services'>
+            <div class='service'>
+                <h3>Programming Languages</h3>
+                <ul class='service-skill-list'>
+                    <li class='service-skill'>C</li>
+                    <li class='service-skill'>C++</li>
+                    <li class='service-skill'>Python</li>
+                </ul>
+                
+                
+            </div><!--service end-->
 
-        <div class='service'>
-            <h3>Design+Development</h3>
-            <p>For larger organizations and businesses, web development teams can consist of hundreds of people (web developers) 
-                and follow standard methods like Agile methodologies while developing websites. 
-                Smaller organizations may only require a single permanent or contracting developer, 
-                or secondary assignment to related job positions such as a graphic designer or information systems technician.
-                Web development may be a collaborative effort between departments rather than the domain of a designated department. 
-                There are three kinds of web developer specialization: front-end developer, back-end developer, and full-stack developer. 
-                Front-end developers are responsible for behavior and visuals that run in the user browser, 
-                while back-end developers deal with the servers.</p>
-        </div><!--service end-->
+            <div class='service'>
+                <h3>Databases</h3>
+                <ul class='service-skill-list'>
+                    <li class='service-skill'>sqlite3</li>
+                    <li class='service-skill'>MySQL</li>
+                    <li class='service-skill'>PostgreSQL</li>
+                </ul>
+                
+            </div><!--service end-->
 
-        <div class='service'>
-            <h3>Design+Development</h3>
-            <p>For larger organizations and businesses, web development teams can consist of hundreds of people (web developers) 
-                and follow standard methods like Agile methodologies while developing websites. 
-                Smaller organizations may only require a single permanent or contracting developer, 
-                or secondary assignment to related job positions such as a graphic designer or information systems technician.
-                Web development may be a collaborative effort between departments rather than the domain of a designated department. 
-                There are three kinds of web developer specialization: front-end developer, back-end developer, and full-stack developer. 
-                Front-end developers are responsible for behavior and visuals that run in the user browser, 
-                while back-end developers deal with the servers.</p>
-        </div><!--service end-->
+            <div class='service'>
+                <h3>Web Technologies</h3>
+                <ul class='service-skill-list'>
+                    <li class='service-skill'>HTML5</li>
+                    <li class='service-skill'>CSS3</li>
+                    <li class='service-skill'>Javascript</li>
+                    <li class='service-skill'>Bootstrap</li>
+                </ul>
+                
+            </div><!--service end-->
 
-    </div>
+            <div class='service'>
+                <h3>Frameworks and other technologies</h3>
+                <ul class='service-skill-list'>
+                    <li class='service-skill'>Django</li>
+                    <li class='service-skill'>LXML</li>
+                    <li class='service-skill'>Pygame</li>
+                    <li class='service-skill'>Tkinter</li>
+                    <li class='service-skill'>Git</li>
+                </ul>
+            </div><!--service end-->
 
-    <a href='#work' class='btn'>My Work</a>
+        </div>
 
-</section>
+        <a href='#work' class='btn'>My Work</a>
+
+    </section>
+</div>
 
 <!--AboutMe-->
 
-<section class='aboutme' id='about'>
-    <h2 class='section__title section__title--about'>Who I am</h2>
-    <p  class='section__subtitle section__subtitle--about'>I am a Designer and Developer</p>
+<div class='section-wrapper'>
+    <section class='aboutme portfolio-sections' id='about'>
+        <h2 class='section__title section__title--about'>Who I am</h2>
+        <p  class='section__subtitle section__subtitle--about'>I am a Full Stack Developer</p>
 
-    <img src='images/myphoto2.jpg' alt='' class='aboutme__photo'>
-    <div class='aboutme__body'>
-        <p>Choose a photo that represents your personality. 
-            Depending on the tone of your online portfolio and what kind of work you do, 
-            you might choose an image that’s more professional (like a headshot) or 
-            something more personal (like a shot of you working in your studio). 
-            Either way, adding a photo will make your online portfolio stand out by 
-            letting visitors to your website to put a face to your name.</p>
-
-        <p>Choose a photo that represents your personality. 
-            Depending on the tone of your online portfolio and what kind of work you do, 
-            you might choose an image that’s more professional (like a headshot) or 
-            something more personal (like a shot of you working in your studio). 
-            Either way, adding a photo will make your online portfolio stand out by 
-            letting visitors to your website to put a face to your name.</p>
-    </div>
-</section>
+        <img src='images/myphoto2.jpg' alt='' class='aboutme__photo'>
+        <div class='aboutme__body'>
+            <p>My name is Sadkirat Singh.I am a computer science student, currently pursuing B.Tech
+            from Guru Nank Dev University, Amritsar. I am an avid learner and programmer who has 
+            a penchant for reading and understanding source codes.My foremost aim is to develop 
+            projects that can make difference to the lives of people in positive way.
+            </p>
+            <p>
+                Besides programming, I have pursued tabla(percussion) professionly and Indian Mythology
+                is my hobby-horse.
+            </p>
+        </div>
+    </section>
+</div>
 
 <!--work-->
 
-<section class='mywork' id='work'>
-    <h2 class='section__title section__title--work'>My Work</h2>
-    <p class='section__subtitle section__subtitle--work'>A selection of my range of work</p>
-    
-    <div class='portfolio'>
-        <a href='#' class='portfolio__item'>
-            <img src='images/notetaking.png' alt='' class='portfolio__img'>
-        </a>
+<div class='section-wrapper'>
+    <section class='mywork portfolio-sections' id='work'>
+        <h2 class='section__title section__title--work'>My Work</h2>
+        <p class='section__subtitle section__subtitle--work'>A selection of my range of work</p>
+        
+        <div class='portfolio'>
+            <div class='portfolio__item'>
+                <div class='work-image-wrapper'>
+                    <img src='images/pygame1.png' alt='' class='portfolio__img full-desc-link pygame'>
+                </div>
+                <div class='portfolio-item-description'>
+                    <h4 class='work-title'>A Bit Racey</h4>
+                    <div class='work-skills'>
+                        <span class='skill'>python</span>
+                        <span class='skill'>pygame</span>
+                    </div>
+                    <div class='work-links'>
+                    <a class='work-github-link' href='https://github.com/SadkiratSingh/ABitRacey'>Github link</a>
+                    </div>
+                </div>
+            </div>
 
-        <a href='#' class='portfolio__item'>
-            <img src='images/shopping.jpg' alt='' class='portfolio__img'>
-        </a>
+            <div class='portfolio__item'>
+                <div class='work-image-wrapper'>
+                    <img src='images/doodle.png' alt='' class='portfolio__img full-desc-link doodle'>
+                </div>
+                <div class='portfolio-item-description'>
+                    <h4 class='work-title'>Doodle(graphics)</h4>
+                    <div class='work-skills'>
+                        <span class='skill'>C++</span>
+                    </div>
+                    <div class='work-links'>
+                    <a class='work-github-link' href='https://github.com/SadkiratSingh'>Github link</a>
+                    </div>
+                    <div class='full-project-description'>
 
-        <a href='#' class='portfolio__item'>
-            <img src='images/blog.jpg' alt='' class='portfolio__img'>
-        </a>
+                    </div>
+                </div>
+            </div>
 
-        <a href='#' class='portfolio__item'>
-            <img src='images/graphics.png' alt='' class='portfolio__img'>
-        </a>
+            <div class='portfolio__item'>
+                <div class='work-image-wrapper'><img src='images/tictactoe.png' alt='' class='portfolio__img full-desc-link tictactoe'></div>
+                <div class='portfolio-item-description'>
+                    <h4 class='work-title'>Tic Tac Toe</h4>
+                    <div class='work-skills'>
+                        <span class='skill'>html5</span>
+                        <span class='skill'>css3</span>
+                        <span class='skill'>javascript</span>
+                    </div>
+                    <div class='work-links'>
+                    <a class='work-github-link' href='https://github.com/SadkiratSingh/TicTacToe'>Github link</a>
+                    </div>
+                </div>
+            </div>
 
-        <a href='#' class='portfolio__item'>
-            <img src='images/tictactoe.png' alt='' class='portfolio__img'>
-        </a>
+            <div class='portfolio__item'>
+                <div class='work-image-wrapper'><img src='images/web.png' alt='' class='portfolio__img full-desc-link webscraping'></div>
+                <div class='portfolio-item-description'>
+                    <h4 class='work-title'>Web Scraping</h4>
+                    <div class='work-skills'>
+                        <span class='skill'>python</span>
+                        <span class='skill'>LXML</span>
+                    </div>
+                    <div class='work-links'>
+                    <a class='work-github-link' href='https://github.com/SadkiratSingh/WebScraping'>Github link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
-    </div>
-</section>
 
 <!--FOOTER-->
-<footer class='myfooter'>
-    <a href='#' class='footer__link'>sadkiratsingh@yahoo.com</a>
-    <ul class='social-list'>
-        <li class='social-list__items'>
-            <a class='social-list__link' href='https://www.twitter.com/'><i class="fab fa-twitter"></i></a></li>
-        <li class='social-list__items'>
-            <a class='social-list__link' href='https://www.instagram.com/'><i class="fab fa-instagram"></i></a></li>
-        <li class='social-list__items'>
-            <a class='social-list__link' href='https://www.github.com/'><i class="fab fa-github"></i></a></li>
-        <li class='social-list__items'>
-            <a class='social-list__link' href='https://www.facebook.com/'><i class="fab fa-facebook-f"></i></a></li>
-    </ul>
-</footer>
+<div class='section-wrapper'>
+    <footer class='myfooter portfolio-sections'>
+        <span style="color:white;"><i class="far fa-paper-plane"></i>mail us at: </span><a href='mailto:sadkiratsingh@yahoo.com' class='footer__link'>sadkirstsingh@yahoo.com</a>
+        <ul class='social-list'>
+            <li class='social-list__items'>
+                <a class='social-list__link' href='linkedin.com/in/sadkirat-singh-2a27a71a4 '><i class="fab fa-linkedin"></i></a></li>
+            <li class='social-list__items'>
+                <a class='social-list__link' href='https://github.com/SadkiratSingh'><i class="fab fa-github"></i></a></li>
+        </ul>
+    </footer>
+</div>
+
+<!--PORTFOLIO ITEM DESCRIPTION-->
+
+<section class='project-desc'>
+    <img class='img-desc-exit' src='images/cross1.png' alt='cross'>
+
+    <div class='description-wrapper' id='pygame'>
+        <h1 class='section__title project__title'>
+            <strong>A Bit Racey</strong>
+        </h1>
+        <p class='section__subtitle project__subtitle'>A Car Game</p>
+        <img src='images/pygame1.png' class='description__img' alt=''>
+        <p class='desc'>This is simple car game in python using pygame package. The goal is to dodge the obstructions coming your way. Difficulty level increases as the game progresses. The objective is to score(dodge) as much as you can. You can pause the game whenever you want. Music and sound effects give you perfect gaming experience.</p>
+    </div>
+
+    <div class='description-wrapper' id='doodle'>
+        <h1 class='section__title section__title--project-desc'>
+            <strong>A Doodle</strong>
+        </h1>
+        <p class='section__subtitle section__subtitle--project-desc'>Graphics</p>
+        <img src='images/doodle.png' class='description__img' alt=''>
+        <p class='desc'>I have tried making a simple doodle with graphics library in c++.</p>
+    </div>
+
+    <div class='description-wrapper' id='tictactoe'>
+        <h1 class='section__title section__title--project-desc'>
+            <strong>Tic Tac Toe</strong>
+        </h1>
+        <p class='section__subtitle section__subtitle--project-desc'>zero-kaanta</p>
+        <img src='images/tictactoe.png' class='description__img' alt=''>
+        <p class='desc'>This is TicTacToe(Zero-Kaanta) game using javascript, CSS3, Html5</p>
+    </div>
+
+    <div class='description-wrapper' id='webscraping'>
+        <h1 class='section__title section__title--project-desc'>
+            <strong>Web Scraping</strong>
+        </h1>
+        <p class='section__subtitle section__subtitle--project-desc'>A Car Game</p>
+        <img src='images/web.png' class='description__img' alt=''>
+        <p class='desc'>I have tried scraping information from various trending sites like IMDB,Ebay etc. The tool used in scraping is LXML package in python. I have tried to store scraped information in csv and json file types.</p>
+    </div>
+
+    <button class='desc-exit'>Close</button>
+</section>
+
+<!--PORTFOLIO ITEM DESCRIPTION-->
 
 <button class='scrolltotop'><span class='arrow'></span></button>
 
