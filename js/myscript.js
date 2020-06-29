@@ -32,7 +32,7 @@ scrollToTop.addEventListener('click',function(){
 
 const allSections=document.querySelectorAll('.section-wrapper');
 
-const projectLinks=document.querySelectorAll('.full-desc-link');
+const projectLinks=document.querySelectorAll('.about-project');
 
 const projects=document.querySelectorAll('.description-wrapper')
 
@@ -49,7 +49,7 @@ function noSectionDisplay(e){
     }
     document.documentElement.scrollTop=0;//its placement is very important//
     var classes=e.target.classList;
-    var p=classes[2];
+    var p=classes[1];
     projectSection.style.display='block'
 
     for(var i=0;i<projects.length;i++){
