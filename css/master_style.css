@@ -178,7 +178,7 @@ h3{
 
 .service-skill-list{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(106px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(108px,1fr));
     list-style-type:none;
     padding-left:0px;
     text-align:center;
@@ -189,9 +189,10 @@ h3{
     margin:0.8rem;
     font-weight:500;
     border-radius:1.5rem;
-    font-size:1rem;
+    font-size:0.8rem;
     padding:0.25rem;
-    background-color:rgba(22,224,189,0.7);
+    background-color:rgba(22,224,189,0.6);
+    text-transform:uppercase;
 }
 /*
 .service-skill::after{
@@ -233,7 +234,7 @@ h3{
     }
     .service{
         margin:1rem;
-        width:50%;
+        width:100%;
     }
 }
 
