@@ -52,6 +52,7 @@ section{
 img{
     max-width:100%;
     display:block;
+    border-radius:50%;
 }
 
 h1,h2,h3{
@@ -176,6 +177,8 @@ h3{
 }
 
 .service-skill-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(106px,1fr));
     list-style-type:none;
     padding-left:0px;
     text-align:center;
@@ -184,10 +187,13 @@ h3{
 
 .service-skill{
     margin:0.8rem;
-    font-size:1.2rem;
     font-weight:500;
+    border-radius:1.5rem;
+    font-size:1rem;
+    padding:0.1rem;
+    background-color:rgba(22,224,189,0.7);
 }
-
+/*
 .service-skill::after{
     content:'';
     display:block;
@@ -197,6 +203,7 @@ h3{
     margin:0.3rem auto;
     opacity:0.3;
 }
+*/
 
 .btn{
     border:1px solid var(--clr-accent);
@@ -226,6 +233,7 @@ h3{
     }
     .service{
         margin:1rem;
+        width:50%;
     }
 }
 
