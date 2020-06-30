@@ -10,8 +10,8 @@
 </head>
 
 <body>
-
-<div class='section-wrapper'>
+<!-- NAV-->
+<div class='section-wrapper navheader'>
     <header class='portfolio-sections'>
         <div class='logo'>
             <h3>Sadkirat's Portfolio</h3>
@@ -29,11 +29,13 @@
                 <li class='nav__item'><a href='#work' class='nav__link'>My Work</a></li>
             </ul>
         </nav>
+    </header>
 </div>
-</header>
+
+<!-- NAV-->
 
 <!--INTODUCTION-->
-<div class='section-wrapper'>
+<div class='section-wrapper introsection'>
     <section class='intro portfolio-sections' id='home'>
         <h1 class='section__title section__title--intro'>
             Hi,I am <strong>Sadkirat Singh</strong>
@@ -104,18 +106,53 @@
 
 <div class='section-wrapper'>
     <section class='aboutme portfolio-sections' id='about'>
-        <h2 class='section__title section__title--about'>Who I am</h2>
-        <p  class='section__subtitle section__subtitle--about'>I am a Full Stack Developer</p>
+        <h2 class='section__title section__title--about'>About Me</h2>
 
-        
         <div class='aboutme__body'>
-            <p>My name is Sadkirat Singh.I am a computer science student, currently pursuing B.Tech
-            from Guru Nank Dev University, Amritsar. I am a full stack developer and competitive programmer. My foremost aim is to develop projects that can make difference to the lives of people in positive way.
-            </p>
-            <p>
-                Besides programming, I have pursued tabla(percussion) professionly and Indian Mythology
-                is my hobby-horse. 
-            </p>
+            <div class='aboutme-topic coder'>
+                <h3 class='about-heading'>Programming</h3>
+                <p>I am a competitive programmer and a full stack developer. I love to handle complex projects. My foremost aim is to develop projects that can make difference to the lives of people in positive way.
+                </p>
+            </div>
+            <div class='aboutme-topic education'>
+                <h3 class='about-heading'>Education</h3>
+                <div class='edu-container'>
+                    <div class='edu-container-item bachelors'>
+                        <h4 class='edu-heading'>B.tech in Computer Science</h4>
+                        <div class='edu-details'>
+                            <p><span class='edu-label'>Institution:</span><span>Guru Nanak Dev University</span></p>
+                            <p><span class='edu-label'>Year:</span><span>2017-2021</span></p>
+                            <p></p><span class='edu-label'>CGPA:</span><span>8.88/10</span></p>
+                        </div>
+                    </div>
+                    <div class='edu-container-item secondary'>
+                        <h4 class='edu-heading'>XII (CBSE)</h4>
+                        <div class='edu-details'>
+                            <p><span class='edu-label'>Institution:</span><span>DAV Public School</span></p>
+                            <p><span class='edu-label'>Year:</span><span>2016-2017</span></p>
+                            <p><span class='edu-label'>CGPA:</span><span>90.4%</span></p>
+                        </div>
+                    </div>
+                    <div class='edu-container-item primary'>
+                        <h4 class='edu-heading'>X (CBSE)</h4>
+                        <div class='edu-details'>
+                        <p><span class='edu-label'>Institution:</span><span>DAV Public School</span></p>
+                        <p><span class='edu-label'>Year:</span><span>2014-2015</span></p>
+                        <p><span class='edu-label'>CGPA:</span><span>10/10</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='aboutme-topic music'>
+                <h3 class='about-heading'>Music</h3>
+                <p>I am a tabla(percussion) player, having over a decade of experience in this profession.
+                   I like to fuse bollywood and hollywood songs with tabla. I have an instagram account dedicated to my profession. <br><br><strong>Link to my <a href='https://www.instagram.com/sadkirat_singh/'><i class="fab fa-instagram" style="color:black;"></i></a> handle.</strong>
+                </p>
+            </div>
+            <div class='aboutme-topic mythology'>
+                <h3 class='about-heading'>Mythology</h3>
+                <p>I am an Indian mythology geek. I love to explore about epics like Mahabharata and Ramayana, the Puranas. I hone my knowledge through reading mythological novels, my favourite being <strong>"Immortals Of Meluha"</strong> by Amish Tripathi </p>
+            </div>
         </div>
     </section>
 </div>
@@ -129,9 +166,6 @@
         
         <div class='portfolio'>
             <div class='portfolio__item'>
-                <div class='work-image-wrapper'>
-                    <!--<img src='images/pygame1.png' alt='' class='portfolio__img full-desc-link pygame'>-->
-                </div>
                 <div class='portfolio-item-description'>
                     <h4 class='work-title'>A Bit Racey</h4>
                     <div class='work-skills'>
@@ -146,9 +180,6 @@
             </div>
 
             <div class='portfolio__item'>
-                <div class='work-image-wrapper'>
-                    <!--<img src='images/mysql1.png' alt='' class='portfolio__img full-desc-link stusql'>-->
-                </div>
                 <div class='portfolio-item-description'>
                     <h4 class='work-title'>Student DataBase App</h4>
                     <div class='work-skills'>
@@ -164,9 +195,6 @@
             </div>
 
             <div class='portfolio__item'>
-                <div class='work-image-wrapper'>
-                    <!--<img src='images/doodle.png' alt='' class='portfolio__img full-desc-link doodle'>-->
-                </div>
                 <div class='portfolio-item-description'>
                     <h4 class='work-title'>Doodle(graphics)</h4>
                     <div class='work-skills'>
@@ -180,7 +208,6 @@
             </div>
 
             <div class='portfolio__item'>
-                <!--<div class='work-image-wrapper'><img src='images/tictactoe.png' alt='' class='portfolio__img full-desc-link tictactoe'></div>-->
                 <div class='portfolio-item-description'>
                     <h4 class='work-title'>Tic Tac Toe</h4>
                     <div class='work-skills'>
@@ -196,7 +223,6 @@
             </div>
 
             <div class='portfolio__item'>
-                <!--<div class='work-image-wrapper'><img src='images/web.png' alt='' class='portfolio__img full-desc-link webscraping'></div>-->
                 <div class='portfolio-item-description'>
                     <h4 class='work-title'>Web Scraping</h4>
                     <div class='work-skills'>
@@ -211,7 +237,6 @@
             </div>
 
             <div class='portfolio__item'>
-                <!--<div class='work-image-wrapper'><img src='images/paint1.png' alt='' class='portfolio__img full-desc-link paintapp'></div>-->
                 <div class='portfolio-item-description'>
                     <h4 class='work-title'>Paint App</h4>
                     <div class='work-skills'>
@@ -226,7 +251,6 @@
             </div>
 
             <div class='portfolio__item'>
-                <!--<div class='work-image-wrapper'><img src='images/uninote1.png' alt='' class='portfolio__img full-desc-link uninote'></div>-->
                 <div class='portfolio-item-description'>
                     <h4 class='work-title'>UniNote</h4>
                     <div class='work-skills'>
@@ -330,6 +354,7 @@
 
 <button class='scrolltotop'><span class='arrow'></span></button>
 
+<script src='js/jquery-3.5.1.min.js'></script>
 <script src='js/myscript.js'></script>
 </body>
 

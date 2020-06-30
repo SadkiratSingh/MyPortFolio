@@ -78,3 +78,91 @@ function SectionDisplay(e){
         projects[i].style.display='none';
     }
 }
+
+const eduheadings=document.querySelectorAll('.edu-heading');
+for(var i=0;i<eduheadings.length;i++){
+    eduheadings[i].addEventListener('click',function(e){
+        e.target.classList.toggle('ed-detail-active');
+        var edudetails=e.target.nextElementSibling;
+        if(edudetails.style.maxHeight){
+            edudetails.style.maxHeight=null;
+        }
+        else{
+            edudetails.style.maxHeight=edudetails.scrollHeight+'px';
+        }
+    })
+}
+
+$(document).ready(function(){
+    // for navheader //
+    var navsec=$('.navheader');
+    var logo=$('.logo');
+    navsec.addClass('appear');
+    logo.addClass('appearlogo');
+    // for navheader //
+
+    //introheader//
+    var introsec=$('.introsection');
+    introsec.addClass('appear');
+    //introheader//
+
+    $(document).scroll(function(){
+        var pageTop=$(document).scrollTop();
+        var pageBottom=pageTop+$(window).height();
+
+        // for all sections //
+        var allsections=$('.section-wrapper');
+        for(var i=0;i<allsections.length;i++){
+            var section=$(allsections[i]);
+            if(!section[0].classList.contains('appear')){
+                var sec_pos=section.position().top;
+                if(sec_pos<pageBottom){
+                    section.addClass('appear');
+                }
+            }
+        }
+        // for all sections //
+
+        // for skill section //
+        var allservices=$('.service');
+        for(var i=0;i<allservices.length;i++){
+            var service=$(allservices[i]);
+            var serv_pos=service.position().top;
+            if(serv_pos<pageBottom){
+                service.addClass('serviceappear');
+            }
+        }
+        // for skill section //
+
+        // for aboutme section //
+        
+        var aboutmeitems=$('.aboutme-topic');
+        for(var i=0;i<aboutmeitems.length;i++){
+            var detail=$(aboutmeitems[i]);
+            var detail_pos=detail.position().top;
+            if(detail_pos<pageBottom){
+                detail.addClass('aboutdetailappear');
+            }
+        }
+
+        // for aboutme section //
+
+        //for work section//
+        var portfolio=$('.portfolio__item');
+        var workSub=$('.section__subtitle--work');
+        var workSub_pos=workSub.position().top;
+        if(pageBottom>workSub_pos)
+            workSub.addClass('fadeinsub');
+        else
+            workSub.removeClass('fadeinsub');
+        for(var i=0;i<portfolio.length;i++){
+            var item=$(portfolio[i]);
+            var item_pos=item.position().top;
+            if(pageBottom>item_pos)
+                item.addClass('fadeinport');
+            else
+                item.removeClass('fadeinport');
+        }
+        //for work section//
+    });
+});
