@@ -280,7 +280,6 @@ h3{
 
 .aboutme__body{
     margin-top:2rem;
-    text-align:center;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
@@ -328,11 +327,54 @@ h3{
     font-weight:bold;
 }
 
+.pro-sources{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.2s ease-out;
+}
+
+.sources-heading{
+    border-bottom:1px solid lightgray;
+}
+.sources-heading::after{
+    content:'\02795';
+    font-size:8px;
+    float:right;
+    color:gray;
+    margin-left:5px;
+}
+
+.active-sources::after{
+    content:'\2796';
+}
+
+.pro-sources-items{
+    border:1px solid var(--clr-accent);
+    color:var(--clr-accent);
+    margin-bottom:0.7rem;
+    width:70%;
+    border-radius:0.3rem;
+    padding:0.2rem 1rem;
+    text-transform:uppercase;
+}
+
+.pro-sources-links{
+    display:block;
+    text-align:center;
+    font-weight:bold;
+    color:inherit;
+    text-decoration:none;
+}
+.pro-sources-links:hover{
+    opacity:0.6;
+}
 
 @media screen and (min-width:600px){
     .aboutme__body{
         margin-top:2rem;
-        text-align:center;
         display:grid;
         grid-template-columns:repeat(auto-fit,minmax(600px,1fr));
         align-content:center;
@@ -340,11 +382,19 @@ h3{
         grid-row-gap:1rem;
     }
     .aboutme-topic{
-        min-height:160px;
+        min-height:170px;
     }
     .aboutme-topic.music{
         grid-row:2/1;
         grid-column:2/3;
+    }
+    .pro-sources{
+       display:flex;
+       justify-content:space-evenly;
+    }
+    .pro-sources-items{
+        width:30%;
+        margin:0;
     }
 }
 /*aboutme*/
@@ -693,7 +743,6 @@ header{
     display:none;
     text-align:center;
 }
-
 .description__img{
     box-shadow:var(--bs);
 }

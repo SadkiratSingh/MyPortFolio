@@ -93,6 +93,18 @@ for(var i=0;i<eduheadings.length;i++){
     })
 }
 
+const sourceheading=document.querySelector('.sources-heading');
+sourceheading.addEventListener('click',function(e){
+    e.target.classList.toggle('active-sources');
+    var sources=e.target.nextElementSibling;
+    if(sources.style.maxHeight){
+        sources.style.maxHeight=null;
+    }
+    else{
+        sources.style.maxHeight=sources.scrollHeight+'px';
+    }
+});
+
 $(document).ready(function(){
     // for navheader //
     var navsec=$('.navheader');
